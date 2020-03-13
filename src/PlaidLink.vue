@@ -33,6 +33,8 @@ export default {
         clientName: String,
         publicKey: String,
         webhook: String,
+        userLegalName: String,
+        userEmailAddress: String,
         onLoad: Function,
         onSuccess: Function,
         onExit: Function,
@@ -63,7 +65,9 @@ export default {
                 product: this.product,
                 selectAccount: this.selectAccount,
                 token: this.token,
-                webhook: this.webhook
+                webhook: this.webhook,
+                userLegalName: this.userLegalName,
+                userEmailAddress: this.userEmailAddress
             })
         },
         handleOnClick () {
